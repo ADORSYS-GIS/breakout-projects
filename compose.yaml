@@ -50,7 +50,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      NC_DB: "pg://nocodb:nocodbpass@nocodb-postgres:5432/nocodb"
+      NC_DB: "pg://nocodb-postgres:5432?u=nocodb&p=nocodbpass&d=nocodb"
       NC_ALLOW_LOCAL_HOOKS: "true"
     depends_on:
       - nocodb-postgres
