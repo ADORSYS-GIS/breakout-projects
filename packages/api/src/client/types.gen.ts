@@ -29,18 +29,20 @@ export type Groupby = {
 
 export type UserResponse = {
     Id?: number;
-    FirstName?: string;
+    'First Name'?: string;
     LastName?: string;
     Email?: string;
     Avatar?: UserAvatarRequest;
     Accounts?: number;
     Role?: number;
+    'Birth date'?: string;
 };
 
 export type UserRequest = {
-    FirstName?: string;
+    'First Name'?: string;
     LastName?: string;
     Email?: string;
+    'Birth date'?: string;
 };
 
 export type UserIdRequest = {
